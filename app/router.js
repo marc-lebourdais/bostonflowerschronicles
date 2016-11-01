@@ -7,6 +7,15 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('posts');
+
+  this.route('post', function() {
+    this.route('intro');
+    this.route('mexico-city');
+    this.route('unrequited-love');
+  });
+  this.route('about');
+  this.route('faq');
 });
 
 export default Router;
