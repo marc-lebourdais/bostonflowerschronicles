@@ -301,6 +301,23 @@ p {
   padding: 4px 15px;
 }
 
+.left .inline-pic {
+  padding-left: 0;
+}
+
+.right .inline-pic {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+.left .inline-pic,
+.right .inline-pic {
+  width: 100%;
+  padding: 4px 8px;
+  height: auto;
+}
+}
+
 /**
  * Utilities
  */
