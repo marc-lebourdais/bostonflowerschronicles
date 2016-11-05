@@ -292,10 +292,6 @@ p {
   /*width: 75%;*/
 }
 
-.profile-pic {
-  padding: 15px;
-}
-
 .inline-pic {
   max-width: 100%;
   padding: 4px 15px;
@@ -313,7 +309,7 @@ p {
 .left .inline-pic,
 .right .inline-pic {
   width: 100%;
-  padding: 4px 8px;
+  padding: 4px 0;
   height: auto;
 }
 }
