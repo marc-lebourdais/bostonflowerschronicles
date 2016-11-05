@@ -3,7 +3,16 @@ import config from './config/environment';
 
 const Router = Ember.Router.extend({
   location: config.locationType,
-  rootURL: config.rootURL
+  rootURL: config.rootURL,
+
+  didTransition: function() {
+    this._super(...arguments);
+
+    return ga('send', 'pageview', {
+      'page': this.get('url'),
+      'title': this.get('url')
+    });
+  }
 });
 
 Router.map(function() {
