@@ -297,6 +297,7 @@ p {
 }
 
 .inline-pic {
+  max-width: 100%;
   padding: 4px 15px;
 }
 
